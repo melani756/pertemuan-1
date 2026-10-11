@@ -17,7 +17,7 @@ public class PythagorasKeliling {
         double c = cariSisiC(a, b);
         double keliling = cariKeliling(a, b, c);
         
-        System.out.println("=== 6. Pythagoras & Keliling Segitiga ===");
+        System.out.println();
         System.out.println("Nilai c (Sisi Miring) = " + c);
         System.out.println("Keliling Segitiga     = " + keliling);
     }

@@ -1,41 +1,24 @@
 package Pertemuan2;
 
 public class KonversiSuhu {
-
-    public static void konversiCelciusFahrenheit(double c, double f) {
-        double fDariC = (c * 9/5) + 32;
-        double cDariF = (f - 32) * 5/9;
-        System.out.println(c + " °C ke Fahrenheit = " + fDariC + " °F");
-        System.out.println(f + " °F ke Celcius    = " + cDariF + " °C");
-    }
-
-    public static void konversiCelciusReamur(double c, double r) {
-        double rDariC = c * 4/5;
-        double cDariR = r * 5/4;
-        System.out.println(c + " °C ke Reamur     = " + rDariC + " °R");
-        System.out.println(r + " °R ke Celcius    = " + cDariR + " °C");
-    }
-
-    public static void konversiFahrenheitReamur(double f, double r) {
-        double rDariF = (f - 32) * 4/9;
-        double fDariR = (r * 9/4) + 32;
-        System.out.println(f + " °F ke Reamur     = " + rDariF + " °R");
-        System.out.println(r + " °R ke Fahrenheit = " + fDariR + " °F");
-    }
-
     public static void main(String[] args) {
-        double c = 10;
-        double f = 15;
-        double r = 5;
-        
-        System.out.println("=== 9. Konversi Suhu (C=10, F=15, R=5) ===");
-        System.out.println("\n--- a. Celcius & Fahrenheit ---");
-        konversiCelciusFahrenheit(c, f); 
-        
-        System.out.println("\n--- b. Celcius & Reamur ---");
-        konversiCelciusReamur(c, r);   
-        
-        System.out.println("\n--- c. Fahrenheit & Reamur ---");
-        konversiFahrenheitReamur(f, r);  
+        double C = 10;
+        double F = 15;
+        double R = 5;
+
+        double C_to_F = (C * 9/5) + 32;
+        double F_to_C = (F - 32) * 5/9;
+        System.out.println("10 Celcius ke Fahrenheit: " + C_to_F);
+        System.out.println("15 Fahrenheit ke Celcius: " + F_to_C);
+
+        double C_to_R = C * 4/5;
+        double R_to_C = R * 5/4;
+        System.out.println("10 Celcius ke Reamur: " + C_to_R);
+        System.out.println("5 Reamur ke Celcius: " + R_to_C);
+
+        double F_to_R = (F - 32) * 4/9;
+        double R_to_F = (R * 9/4) + 32;
+        System.out.println("15 Fahrenheit ke Reamur: " + F_to_R);
+        System.out.println("5 Reamur ke Fahrenheit: " + R_to_F);
     }
 }

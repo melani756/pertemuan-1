@@ -1,19 +1,17 @@
 package Pertemuan2;
 
 public class LuasSegitiga {
-
-    public static double hitungLuasSegitiga(double alas, double tinggi) {
-        return 0.5 * alas * tinggi;
-    }
-
     public static void main(String[] args) {
-        double a = 6; 
-        double b = 8; 
         
-        double luas = hitungLuasSegitiga(b, a);
+        double a = 6;
+        double b = 8;
+        double luas = 0.5 * a * b;
+        System.out.println("Luas Segitiga: " + luas);
         
-        System.out.println("=== 5. Luas Segitiga ===");
-        System.out.println("Alas = " + b + ", Tinggi = " + a);
-        System.out.println("Luas Segitiga = " + luas);
+        double c = Math.sqrt((a * a) + (b * b));
+        System.out.println("Nilai sisi c (sisi miring): " + c);
+        
+        double keliling = a + b + c;
+        System.out.println("Keliling Segitiga: " + keliling);
     }
 }

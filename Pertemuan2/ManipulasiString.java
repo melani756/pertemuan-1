@@ -11,7 +11,7 @@ public class ManipulasiString {
         String a = "Saya Belajar Java";
         String b = "Saya Belajar Java";
         
-        System.out.println("=== 7. Manipulasi String ===");
+        System.out.println();
         ubahTeks(a, b);
     }
 }
